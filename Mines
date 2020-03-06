@@ -1,0 +1,22 @@
+from tkinter import *
+
+root = Tk()
+
+root.title("Minesweeper")
+root.geometry("1000x600")
+
+
+topFrame = Frame(root)
+topFrame.pack(side = TOP)
+Welcome = Label(topFrame, text="Welcome to Minesweeper")
+Welcome.pack()
+
+button1 = Button(topFrame, text = "Beginner", fg = "blue")  #Creating buttons for levels
+button2 = Button(topFrame, text = "Intermediate", fg = "blue")
+button3 = Button(topFrame, text = "Advanced", fg = 'blue', bg='Red')
+
+button1.pack()
+button2.pack(fill = X)
+button3.pack(fill = Y)
+
+root.mainloop()
